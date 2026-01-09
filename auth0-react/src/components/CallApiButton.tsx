@@ -19,7 +19,7 @@ function CallApiButton() {
             },
         });
 
-        console.log(token);
+        //console.log(token);
 
         // Appeler l’API privée
         const response = await fetch("http://localhost:3000/api/private", {
@@ -36,7 +36,7 @@ function CallApiButton() {
     };
 
     return (
-        <div>
+        <div style={{ display: 'flex', gap: 20}}>
             <button className="button" onClick={callPublicApi}>Public API</button>
             <button className="button" onClick={callPrivateApi}>Private API</button>
         </div> 
